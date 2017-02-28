@@ -4,7 +4,7 @@ module.exports = function(config) {
     frameworks: ['mocha', 'browserify'],
     files: [
       {
-        pattern: 'css/button.test.js',
+        pattern: 'css/**.test.js',
         included: true
       },
       {
