@@ -14,6 +14,7 @@ module.exports = function(config) {
     ],
     preprocessors: {
     '**/*.test.js': [ 'browserify' ],
+    '**/*.secrets.js': [ 'browserify' ]
     },
     plugins: [
       'karma-mocha',

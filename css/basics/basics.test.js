@@ -1,17 +1,18 @@
-var assert = require('chai').assert;
-var quixote = require('quixote');
+const assert = require('chai').assert;
+const quixote = require('quixote');
+const secrets = require('./basics.secrets');
 
-describe("Basic CSS Rules", function() {
+describe('Basic CSS Rules', function() {
 
   var frame;
-  var container;
+  var buttonContainer;
   var button;
   var boldContainer;
   var boldSpan;
 
-  before(function(done) {
+  before(done => {
     frame = quixote.createFrame({
-      stylesheet: "/base/css/basics/basics.css"
+      stylesheet: '/base/css/basics/basics.css'
     }, done);
   });
 
@@ -19,9 +20,9 @@ describe("Basic CSS Rules", function() {
     frame.remove();
   });
 
-  beforeEach(function() {
+  beforeEach('populate the iframe', () => {
     frame.reset();
-    container = frame.add(
+    buttonContainer = frame.add(
       `<div><a id='button' class='button' href='#anything'>button label!</a></div>`
     );
     boldContainer = frame.add(
@@ -31,14 +32,14 @@ describe("Basic CSS Rules", function() {
     boldSpan = frame.get('#bold-span');
   });
 
-  it('fills its container', function() {
+  it('fills its container', () => {
     button.assert({
-      width: container.width
+      width: buttonContainer.width
     });
   });
 
-  it('has a bold text span', function() {
-    assert.equal(boldSpan.getRawStyle('font-weight'), 'bold', 'should be bold');
-  })
+  it('has a bold text span', () => {
+    secrets.boldTest(boldSpan);
+  });
 
 });
