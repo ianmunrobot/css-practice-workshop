@@ -4,11 +4,11 @@ const secrets = require('./basics.secrets');
 
 describe('Basic CSS Rules', function() {
 
-  var frame;
-  var buttonContainer;
-  var button;
-  var boldContainer;
-  var boldSpan;
+  let frame,
+      buttonContainer,
+      button,
+      boldSpan,
+      blueBackground
 
   before(done => {
     frame = quixote.createFrame({
@@ -25,11 +25,16 @@ describe('Basic CSS Rules', function() {
     buttonContainer = frame.add(
       `<div><a id='button' class='button' href='#anything'>button label!</a></div>`
     );
-    boldContainer = frame.add(
+    frame.add(
       `<div><span id='bold-span' class='bold'>I am bold text</span></div>`
     );
+    frame.add(
+      `<div id='blue-bg' class='blue-background'>test text</div>`
+    )
     button = frame.get('#button');
     boldSpan = frame.get('#bold-span');
+    blueBackground = frame.get('#blue-bg')
+
   });
 
   it('fills its container', () => {
@@ -41,5 +46,10 @@ describe('Basic CSS Rules', function() {
   it('has a bold text span', () => {
     secrets.boldTest(boldSpan);
   });
+
+  it('has a blue background class', () => {
+    let bgStyle = blueBackground.getRawStyle('background-color');
+    secrets.blueBackgoundTest(bgStyle);
+  })
 
 });
