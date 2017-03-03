@@ -10,7 +10,7 @@ module.exports = function(config) {
       {
         pattern: 'css/**',
         served: true,
-      }
+      },
     ],
     preprocessors: {
     '**/*.test.js': [ 'browserify' ],

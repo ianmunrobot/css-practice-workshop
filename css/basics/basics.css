@@ -9,10 +9,9 @@
   font-weight: bold;
 }
 
-/** Create a .blue-background class
+/** Create a class
 *   that sets background color to blue
-*   Do not use the 'blue' shorthand
 **/
 .blue-background {
-  background-color: #0000ff
+  background-color: #0000ff;
 }
