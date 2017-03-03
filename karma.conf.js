@@ -1,7 +1,7 @@
 module.exports = function(config) {
   config.set({
-    // basePath: '',
     frameworks: ['mocha', 'browserify'],
+    reporters: ['mocha'],
     files: [
       {
         pattern: 'css/**.test.js',
@@ -19,7 +19,8 @@ module.exports = function(config) {
     plugins: [
       'karma-mocha',
       'karma-browserify',
-      'karma-quixote'
+      'karma-quixote',
+      'karma-mocha-reporter'
     ]
   });
 };

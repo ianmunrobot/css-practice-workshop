@@ -40,6 +40,7 @@
     "quixote": "^0.12.5"
   },
   "devDependencies": {
+    "karma-mocha-reporter": "^2.2.2",
     "volleyball": "^1.4.1",
     "watchify": "^3.9.0"
   }

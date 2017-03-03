@@ -4,7 +4,6 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const volleyball = require('volleyball');
 
-const { findCSSSelector } = require('./utils/scraper');
 const app = express();
 const {PORT} = require('./_server.config');
 
