@@ -1,0 +1,7 @@
+
+/* create a class to use the single line border rule
+*  2 pixels wide, dotted, and blue line
+*/
+.single-line-border {
+  border: 2px dotted #0000ff;
+}

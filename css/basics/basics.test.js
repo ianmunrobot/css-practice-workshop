@@ -1,11 +1,11 @@
 const assert = require('chai').assert;
 const quixote = require('quixote');
 const axios = require('axios');
-const {PORT} = require('../../_server.config')
 
+const { PORT } = require('../../_server.config');
 const secrets = require('./basics.secrets');
 
-describe('Basic CSS Rules', function() {
+describe('Basic CSS Rules', () => {
 
   let frame;
 
@@ -15,12 +15,8 @@ describe('Basic CSS Rules', function() {
     }, done);
   });
 
-  after(function() {
+  after(() => {
     frame.remove();
-  });
-
-  beforeEach('populate the iframe', () => {
-
   });
 
   describe('.button full-width class', () => {
@@ -70,15 +66,19 @@ describe('Basic CSS Rules', function() {
     });
 
     it('has a blue background class', () => {
-      let bgPath = `http://0.0.0.0:${PORT}/css?path=basics/basics.css&selector=.blue-background`;
       let bgStyle = blueBackground.getRawStyle('background-color');
       secrets.blueBackgoundTest(bgStyle);
+    });
+
+    it(`does not use the 'blue' keyword`, () => {
+      let bgPath = `http://0.0.0.0:${PORT}/css?path=basics/basics.css&selector=.blue-background`;
       return axios.get(bgPath)
         .then(res => res.data)
         .then(style => {
           assert(style.indexOf('blue') === -1, `does not use the 'blue' keyword`);
-        })
-    })
+        });
+    });
+
   });
 
 });
