@@ -9,7 +9,7 @@ describe("Button", function() {
 
   before(function(done) {
     frame = quixote.createFrame({
-      stylesheet: "/base/css/button.css"
+      stylesheet: '/base/css/button/button.css'
     }, done);
   });
 

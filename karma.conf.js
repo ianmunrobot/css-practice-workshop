@@ -9,12 +9,13 @@ module.exports = function(config) {
       },
       {
         pattern: 'css/**',
-        served: true,
+        included: true,
       },
     ],
     preprocessors: {
     '**/*.test.js': [ 'browserify' ],
-    '**/*.secrets.js': [ 'browserify' ]
+    '**/*.secrets.js': [ 'browserify' ],
+    '**/*.utils.js': [ 'browserify' ]
     },
     plugins: [
       'karma-mocha',

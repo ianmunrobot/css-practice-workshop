@@ -2,8 +2,8 @@ const assert = require('chai').assert;
 const quixote = require('quixote');
 const axios = require('axios');
 
-const { PORT } = require('../../_server.config');
 const secrets = require('./basics.secrets');
+const findCSSSelector = require('../css.utils').findCSSSelector;
 
 describe('Basic CSS Rules', () => {
 
@@ -71,13 +71,13 @@ describe('Basic CSS Rules', () => {
     });
 
     it(`does not use the 'blue' keyword`, () => {
-      let bgPath = `http://0.0.0.0:${PORT}/css?path=basics/basics.css&selector=.blue-background`;
-      return axios.get(bgPath)
-        .then(res => res.data)
-        .then(style => {
+      return axios.get(`/base/css/basics/basics.css`)
+      .then(res => res.data)
+      .then(text => findCSSSelector(text, '.blue-background'))
+      .then(style => {
           assert(style.indexOf('blue') === -1, `does not use the 'blue' keyword`);
         });
-    });
+    })
 
   });
 

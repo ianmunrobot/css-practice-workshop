@@ -2,7 +2,7 @@ const expect = require('chai').expect;
 const quixote = require('quixote');
 const axios = require('axios');
 
-const { PORT } = require('../../_server.config');
+const findCSSSelector = require('../css.utils').findCSSSelector;
 
 describe('Border', () => {
 
@@ -40,9 +40,9 @@ describe('Border', () => {
     });
 
     it('uses the shorthand one-line border style', () => {
-      let borderURL = `http://0.0.0.0:${PORT}/css?path=border/border.css&selector=.single-line-border`;
-      return axios.get(borderURL)
-        .then(res => res.data)
+      return axios.get(`/base/css/border/border.css`)
+      .then(res => res.data)
+      .then(text => findCSSSelector(text, '.single-line-border'))
         .then(style => {
           expect(style).to.not.include('border-style');
           expect(style).to.not.include('border-width');
