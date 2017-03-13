@@ -16,6 +16,6 @@ module.exports = {
     expect(style).to.not.include('border-width');
     expect(style).to.not.include('border-color');
     expect(style).to.include('border:')
-  }
+  },
 
 }

@@ -15,7 +15,7 @@ body {
   background-color: #f34251;
 }
 
-.list {
+.ul-list {
   /*width: 97.2%;*/
   /*position: absolute;*/
   padding: 10px 10px;
@@ -23,7 +23,7 @@ body {
   list-style: none;
 }
 
-.list-item {
+.ul-list-item {
   color: #4579a1;
   margin: 10px auto;
 }
