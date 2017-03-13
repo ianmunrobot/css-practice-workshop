@@ -1,7 +1,7 @@
 function findCSSSelector(text, selector) {
   let startIndex = text.indexOf(selector);
     if (startIndex === -1) {
-      return ''
+      return '';
     } else {
       let endIndex = startIndex + text.slice(startIndex).indexOf('}') + 1;
       return text.slice(startIndex + selector.length, endIndex);
@@ -9,5 +9,5 @@ function findCSSSelector(text, selector) {
 }
 
 module.exports = {
-  findCSSSelector
+  findCSSSelector,
 };
