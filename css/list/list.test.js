@@ -1,5 +1,4 @@
 const quixote = require('quixote');
-const expect = require('chai').expect;
 
 const secrets = require('./list.secrets.js')
 
