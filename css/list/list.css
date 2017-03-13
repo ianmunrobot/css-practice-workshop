@@ -1,0 +1,9 @@
+.list {
+  /*width: 97.2%;*/
+  /*position: absolute;*/
+  list-style: none;
+}
+
+.list-item {
+  margin: 10px 10px;
+}
