@@ -1,5 +1,6 @@
 const quixote = require('quixote');
 const axios = require('axios');
+const expect = require('chai').expect;
 
 const secrets = require('./border.secrets');
 const findCSSSelector = require('../css.utils').findCSSSelector;
@@ -31,14 +32,18 @@ describe('Border', () => {
     });
 
     it('has the correct styling', () => {
-      secrets.borderStyle(bgDiv)
+      secrets.borderStyle(bgDiv);
     });
 
     it('uses the shorthand one-line border style', () => {
       return axios.get(`/base/css/border/border.css`)
-      .then(res => res.data)
-      .then(text => findCSSSelector(text, '.single-line-border'))
-        .then(secrets.oneLineStyle)
+        .then(res => res.data)
+        .then(text => findCSSSelector(text, '.single-line-border'))
+        .then(selector => {
+          expect(selector).to.not.be.empty;
+          return selector;
+        })
+        .then(secrets.oneLineStyle);
     });
 
   });
