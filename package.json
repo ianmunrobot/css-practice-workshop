@@ -4,7 +4,8 @@
   "description": "A technical practice workshop for reviewing HTML/CSS and vanilla JS DOM manipulation",
   "main": "index.js",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "reset": "node reset.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/ianmunrobot/dom-workshop#readme",
   "dependencies": {
     "axios": "^0.15.3",
+    "bluebird": "^3.5.0",
     "browserify": "^14.1.0",
     "chai": "^3.5.0",
     "karma": "^1.5.0",
