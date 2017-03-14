@@ -47,12 +47,14 @@ describe('Columns', () => {
     });
 
     it('divides the width in thirds', () => {
+
       leftCol.assert({
         right: middleCol.left,
       });
       middleCol.assert({
         right: rightCol.left,
       });
+
     });
 
   });
