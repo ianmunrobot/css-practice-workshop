@@ -84,8 +84,8 @@ body {
   {
     name: 'columns',
     path: 'css/simple-columns/columns.css',
-    text: `.half-col-container {
-  /*width: 100%;*/
+    text: `.col-container {
+  width: 100%;
 }
 
 .col-half {

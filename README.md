@@ -25,4 +25,8 @@ If a folder has a `.secrets.js` file, this is to hide the raw CSS style checking
 3. `list` folder - try out some basic unordered list styling within a HTML file
 
 ## To reset your CSS files
+
+
 `npm run reset [<name> <--all>]` will overwrite CSS files with their starting point. `<name>` represents the folder name of the workshop stage or `--all` can be used to reset the entire workshop.
+
+Note: this workshop is in development, so some of the reset scripts load the solution, not a blank template
