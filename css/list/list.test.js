@@ -8,7 +8,8 @@ describe('List', () => {
   before('set up iframe', done => {
     frame = quixote.createFrame({
       src: '/base/css/list/list.html',
-      // stylesheet: '/base/css/list/list.css',
+      stylesheet: ['/base/css/normalize.css', '/base/css/list/list.css'],
+      width: 1000,
     }, done);
   });
 

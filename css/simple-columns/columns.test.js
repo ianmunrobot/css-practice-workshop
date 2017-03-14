@@ -7,6 +7,8 @@ describe('Columns', () => {
   before('set up iframe', done => {
     frame = quixote.createFrame({
       src: '/base/css/simple-columns/columns.html',
+      stylesheet: '/base/css/normalize.css',
+      width: 1000,
     }, done);
   });
 

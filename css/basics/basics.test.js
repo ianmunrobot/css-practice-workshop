@@ -11,7 +11,8 @@ describe('Basic CSS Rules', () => {
 
   before(done => {
     frame = quixote.createFrame({
-      stylesheet: '/base/css/basics/basics.css'
+      stylesheet: ['/base/css/normalize.css', '/base/css/basics/basics.css'],
+      width: 1000,
     }, done);
   });
 

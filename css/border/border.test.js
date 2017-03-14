@@ -11,7 +11,8 @@ describe('Border', () => {
 
   before(done => {
     frame = quixote.createFrame({
-      stylesheet: '/base/css/border/border.css'
+      stylesheet: ['/base/css/normalize.css', '/base/css/border/border.css'],
+      width: 1000,
     }, done);
   });
 

@@ -1,5 +1,5 @@
-.half-col-container {
-  /*width: 100%;*/
+.col-container {
+  width: 100%;
 }
 
 .col-half {
@@ -8,7 +8,7 @@
 }
 
 .col-third {
-  width: 33%;
+  width: 33.33%;
   float: left;
 }
 

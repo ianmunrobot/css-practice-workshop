@@ -4,12 +4,12 @@ module.exports = function(config) {
     reporters: ['mocha'],
     files: [
       {
-        pattern: 'css/**.test.js',
+        pattern: 'css/**/**.test.js',
         included: true
       },
       {
         pattern: 'css/**',
-        included: true,
+        served: true,
       },
     ],
     preprocessors: {
