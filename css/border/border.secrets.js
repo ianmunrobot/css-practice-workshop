@@ -18,4 +18,16 @@ module.exports = {
     expect(style).to.include('border:')
   },
 
+  roundStyle: element => {
+    let radiusStyle = element.getRawStyle('border-radius');
+    let borderWidth = element.getRawStyle('border-width');
+    let borderStyle = element.getRawStyle('border-style');
+    let borderColor = element.getRawStyle('border-color');
+
+    expect(radiusStyle).to.any.equal('50%', '50% 50%', '50% 50% 50% 50%');
+    expect(borderWidth).to.equal('1px');
+    expect(borderStyle).to.equal('solid');
+    expect(borderColor).to.any.equal('rgb(0, 0, 0)', 'rgba(0, 0, 0, 1)');
+  }
+
 }

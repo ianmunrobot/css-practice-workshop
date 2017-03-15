@@ -62,8 +62,7 @@ describe('Border', () => {
     });
 
     it('has the correct styling', () => {
-      let style = borderDiv.getRawStyle('border-radius');
-      expect(style).to.any.equal('50%', '50% 50%', '50% 50% 50% 50%')
+      secrets.roundStyle(borderDiv);
     });
 
   });

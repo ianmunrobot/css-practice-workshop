@@ -30,6 +30,16 @@ module.exports = [
 */
 .single-line-border {
   border: 2px dotted #0000ff;
+}
+/*
+* create a small 100x100px div
+* with a fully circular, 1 pixel-wide, solid black border
+*/
+.round-border {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  border-radius: 50%;
 }`
   },
   {
