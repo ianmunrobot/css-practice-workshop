@@ -22,18 +22,18 @@ describe('Border', () => {
 
   describe('.single-line-border', () => {
     let backgroundContainer,
-        bgDiv;
+        borderDiv;
 
     beforeEach('add to frame', () => {
       frame.reset();
       backgroundContainer = frame.add(
         `<div id='single-line-border' class='single-line-border'>inner text</div>`
       );
-      bgDiv = frame.get('#single-line-border');
+      borderDiv = frame.get('#single-line-border');
     });
 
     it('has the correct styling', () => {
-      secrets.borderStyle(bgDiv);
+      secrets.borderStyle(borderDiv);
     });
 
     it('uses the shorthand one-line border style', () => {
@@ -45,6 +45,25 @@ describe('Border', () => {
           return selector;
         })
         .then(secrets.oneLineStyle);
+    });
+
+  });
+
+  describe('.round-border', () => {
+    let backgroundContainer,
+        borderDiv;
+
+    beforeEach('add to frame', () => {
+      frame.reset();
+      backgroundContainer = frame.add(
+        `<div id='round-border' class='round-border'><p>round border</p></div>`
+      );
+      borderDiv = frame.get('#round-border');
+    });
+
+    it('has the correct styling', () => {
+      let style = borderDiv.getRawStyle('border-radius');
+      expect(style).to.any.equal('50%', '50% 50%', '50% 50% 50% 50%')
     });
 
   });

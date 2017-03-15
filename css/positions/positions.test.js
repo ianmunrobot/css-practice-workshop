@@ -57,7 +57,7 @@ describe('Positions', () => {
     it('should be centered horizontally', () => {
       centerDiv.assert({
         center: container.center,
-      });
+      }, '.center-position horizontal middle should match the container middle');
     });
 
     it('should be centered vertically', () => {

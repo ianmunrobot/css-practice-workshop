@@ -1,7 +1,17 @@
-/* create a class to use the single line border rule
-*  2 pixels wide, dotted, and blue line
+/*
+* create a class to use the single line border rule
+* 2 pixels wide, dotted, and blue line
 */
 .single-line-border {
   border: 2px dotted #0000ff;
 }
 
+/*
+* create a small 50x50px round border
+*/
+.round-border {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
