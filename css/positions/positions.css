@@ -1,0 +1,91 @@
+/*
+* Setup - you should not need to edit this
+*/
+
+body {
+  height: 100%;
+  position: relative;
+}
+
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  background-color: #353333;
+  height: 100%;
+}
+
+.container div {
+  border: 1px solid #FFFFFF;
+}
+
+/*
+* ▒▒▒ Your Code Below ▒▒▒
+*/
+
+/*
+* Square div 200px by 200px
+* fixed to the left side of the container
+* 200px down from the top;
+**/
+
+.fixed-left-position {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  height: 200px;
+  width: 200px;
+  background-color: #a8a1a1;
+}
+
+/*
+* Square div 400px by 400px
+* Should be fixed to the center of the page
+* https://css-tricks.com/centering-css-complete-guide/ might provide
+* some tips and tricks
+*/
+.center-position {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a5a5a5;
+}
+
+/*
+* smaller div with maximum width of 150px
+* displays flush with the top right corner of the parent
+*/
+
+.top-right {
+  position: absolute;
+  max-width: 150px;
+  top: 0px;
+  right: 0px;
+  background-color: #706a6a;
+}
+
+/*
+* smaller div with maximum width of 150px
+* displays flush with bottom left corner of the parent
+*/
+
+.bottom-left {
+  position: absolute;
+  max-width: 150px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #706a6a;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="/base/css/normalize.css">
     <link rel="stylesheet" href="/base/css/positions/positions.css">
   </head>
   <body>
-    <div class="fixed-left-position">
-      <h2>I should be fixed to left side, 100px down</h2>
-    </div>
-    <div class="center-position">
-      <div class="top-right">
-
+    <div class="container" id="container">
+      <div class="fixed-left-position" id="fixed-left-position-1">
+        <h4 class="centered-text">I should be fixed to left side, 200px down</h2>
       </div>
-      <div class="bottom-left">
-
+      <div class="center-position" id="center-position-1">
+        <h3 class="centered-text">I should float in the center</h3>
+        <div class="top-right" id="top-right-1">
+          <p>I will be inside the center float in the top right</p>
+        </div>
+        <div class="bottom-left" id="bottom-left-1">
+          <p>I will be inside the center float in the bottom left</p>
+        </div>
       </div>
     </div>
-
   </body>
 </html>
