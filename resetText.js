@@ -82,7 +82,7 @@ body {
 }`
   },
   {
-    name: 'columns',
+    name: 'simple-columns',
     path: 'css/simple-columns/columns.css',
     text: `.col-container {
   width: 100%;
@@ -97,5 +97,79 @@ body {
   width: 33%;
   float: left;
 }`
+  },
+  {
+    name: 'positions',
+    path: 'css/positions/positions.css',
+    text: `/*
+* Setup - you should not need to edit this
+*/
+
+body {
+  height: 100%;
+  position: relative;
+}
+
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  background-color: #353333;
+  height: 100%;
+}
+
+.container div {
+  border: 1px solid #FFFFFF;
+}
+
+/*
+* ▒▒▒ Your Code Below ▒▒▒
+*/
+
+/*
+* Square div 200px by 200px
+* fixed to the left side of the container
+* 200px down from the top;
+**/
+
+.fixed-left-position {
+  background-color: #a8a1a1;
+}
+
+/*
+* Square div 400px by 400px
+* Should be fixed to the center of the page
+* https://css-tricks.com/centering-css-complete-guide/ might provide
+* some tips and tricks
+*/
+.center-position {
+  background-color: #a5a5a5;
+}
+
+/*
+* smaller div with maximum width of 150px
+* displays flush with the top right corner of the parent
+*/
+
+.top-right {
+  background-color: #706a6a;
+}
+
+/*
+* smaller div with maximum width of 150px
+* displays flush with bottom left corner of the parent
+*/
+
+.bottom-left {
+  background-color: #706a6a;
+}
+
+.centered-text {
+
+}
+`
   }
 ]
