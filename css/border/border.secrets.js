@@ -15,7 +15,7 @@ module.exports = {
     expect(style).to.not.include('border-style');
     expect(style).to.not.include('border-width');
     expect(style).to.not.include('border-color');
-    expect(style).to.include('border:')
+    expect(style).to.include('border:');
   },
 
   roundStyle: element => {
