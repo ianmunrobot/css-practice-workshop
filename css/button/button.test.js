@@ -35,7 +35,7 @@ describe("Button", function() {
 
   it("has styled text", function() {
     assert.equal(button.getRawStyle("text-align"), "center", "should be centered");
-    assert.equal(button.getRawStyle("text-decoration"), "none", "should not be underlined");
+    assert.equal(button.getRawStyle("text-decoration-line"), "none", "should not be underlined");
     assert.equal(button.getRawStyle("text-transform"), "uppercase", "should be uppercase");
   });
 
