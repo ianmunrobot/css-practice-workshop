@@ -7,6 +7,7 @@ A simple workshop for learning/testing basics of CSS
 1. `npm install`
 2. `npm test` to start the Karma testing server. Follow the given URL to capture a browser for testing. So far, this workshop has only been tested with Chrome
 3. Keep your browser window open/on top of other tabs as timeouts/async errors can occur otherwise
+4. Make sure that your browser is set to 100% zoom for best results. Some of these tests check pixel values that can be changed by browser zoom.
 
 ## Suggested Use and Order
 
@@ -19,6 +20,7 @@ If a folder has a `.secrets.js` file, this is to hide the raw CSS style checking
 1. `basics` folder - try this out to learn a few basics
 2. `border` folder - learn a few border rules and shorthands
 3. `list` folder - try out some basic unordered list styling within a HTML file
+4. `positions` folder - position absolute/relative and spacing practice
 
 ## To reset your CSS files
 
