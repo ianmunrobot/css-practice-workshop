@@ -2,10 +2,6 @@
 
 A simple workshop for learning/testing basics of CSS
 
-## Requires:
-
-* `mocha` global install
-
 ## Setup
 
 1. `npm install`
