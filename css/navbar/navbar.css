@@ -1,0 +1,28 @@
+.navbar-big {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-big ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-big li {
+  display: inline-block;
+  color: white;
+}
+
+.navbar-big a {
+  background-color: #808080;
+}
+
+.navbar-big li:hover {
+  background-color: #32cd32;
+}
+
+.navbar-big li:active {
+
+}
