@@ -1,22 +1,39 @@
+/*
+* navbar-big will be a fixed horizontal navbar
+* with #808080 gray background and white text
+*
+*/
+
 .navbar-big {
   margin: 0;
   padding: 0;
+  background-color: #808080;
 }
+
+/*
+* Our navbar is wrapped in a ul
+* Make sure that the ul does not display bullets
+* You'll probably need to use the overflow property if you float the individual elements
+*/
 
 .navbar-big ul {
   list-style-type: none;
-  display: block;
   margin: 0;
   padding: 0;
+  overflow: auto;
+
 }
 
 .navbar-big li {
-  display: inline-block;
-  color: white;
+  float: left;
 }
 
 .navbar-big a {
-  background-color: #808080;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .navbar-big li:hover {
