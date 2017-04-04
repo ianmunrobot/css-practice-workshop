@@ -23,37 +23,38 @@ describe('Navbar', () => {
   describe('navbar-big', () => {
     let navbar,
         navbarItems,
-        navbarUl;
+        navbarUl,
+        navbarAs;
 
     beforeEach('grab navbar', () => {
       navbar = frame.get('#navbar-big');
       navbarUl = frame.get('#navbar-big ul');
-      navbarItems = frame.getAll('.navbar-big li', 'navbar-big <li>s');
+      navbarItems = frame.getAll('.navbar-big li', '.navbar-big <li>s');
+      navbarAs = frame.getAll('.navbar-big a', '.navbar-big <a>s')
     });
 
     it('displays navbar ul with gray background', () => {
       let color = navbarUl.getRawStyle('background-color');
       let color2 = navbar.getRawStyle('background-color');
-      expect([color, color2]).to.include('rgb(128, 128, 128)')
+      expect([color, color2]).to.include('rgb(128, 128, 128)');
     });
 
     it('displays list items with white text', () => {
-      for (let i = 0; i < navbarItems.length; i++) {
-        let liColor = navbarItems.at(i).getRawStyle('color');
-        expect(liColor).to.be.equal('rgb(0, 0, 0)')
+      for (let i = 0; i < navbarAs.length(); i++) {
+        let liColor = navbarAs.at(i).getRawStyle('color');
+        expect(liColor).to.be.equal('rgb(255, 255, 255)');
       }
     });
 
     it('displays list items in a row', () => {
       // assert that all navbar li tops match
-      for (let i = 0; i < navbarItems.length; i++) {
+      for (let i = 0; i < navbarItems.length(); i++) {
         let current = navbarItems.at(i);
         current.assert({
           top: navbar.top
         });
       }
     });
-
 
   });
 
