@@ -104,6 +104,7 @@ describe('Positions', () => {
 
     it('displays in the correct position', () => {
       bottomLeftDiv.assert({
+        // 1px is added to each of these assertions to account for borders`
         left: centerDiv.left.plus(1),
         bottom: centerDiv.bottom.minus(1),
       }, '.bottom-left should should be flush with bottom-left corner of the center-position div, plus one pixel for the border');
