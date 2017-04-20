@@ -181,5 +181,91 @@ html {
 
 }
 `
+  },
+  {
+    name: 'navbar',
+    path: 'css/navbar/navbar.css',
+    text:
+`/*
+* ▒▒▒ navbar-big class ▒▒▒
+* will be a fixed horizontal navbar
+* with #808080 gray background and white text
+*/
+
+.navbar-big {
+
+}
+
+/*
+* Our navbar is wrapped in a ul
+* Make sure that the ul does not display bullets
+* All <li> tags should display in a row
+* (There are several ways to do this)
+* You'll probably need to use the overflow property if you float the individual elements
+* All <a> tags descending from .navbar-big should have white text
+*/
+
+.navbar-big ul {
+
+}
+
+.navbar-big li {
+
+}
+
+.navbar-big a {
+
+}
+
+/*
+* create a rule that sets a pseudoclass for hover
+* on any descendent li from the navbar-big class with bg color #32cd32
+*/
+
+
+
+/*
+* create a rule that sets a pseudoclass for active
+* on any descendent li from the navbar-big class with #1e1e1e
+*/
+
+
+
+/*
+* ▒▒▒ navbar-breadcrumb class ▒▒▒
+* with #10a3a7 background color
+* add a 10px padding between the ul and the surrounding navbar
+*/
+
+.navbar-breadcrumb {
+
+}
+
+.navbar-breadcrumb ul {
+
+}
+
+.navbar-breadcrumb li {
+
+}
+
+.navbar-breadcrumb a {
+
+}
+
+/*
+* Add a '/' between each list item. Check this link for info
+* about adding specific separators
+* http://stackoverflow.com/questions/6285359/text-separators-for-li-elements
+* for testing purposes, please add these as before pseudo-elements
+*/
+
+
+
+/*
+* Add underline on hover for <a> tags descending from .navbar-breadcrumb
+*/
+
+`
   }
 ]

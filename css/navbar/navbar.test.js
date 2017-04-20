@@ -3,7 +3,7 @@ const expect = require('chai').expect;
 const axios = require('axios')
 const findCSSSelector = require('../css.utils').findCSSSelector;
 
-describe.only('Navbar', () => {
+describe('Navbar', () => {
   let frame;
 
   before(done => {
@@ -100,6 +100,13 @@ describe.only('Navbar', () => {
       let color = navbarUl.getRawStyle('background-color');
       let color2 = navbar.getRawStyle('background-color');
       expect([color, color2]).to.include('rgb(16, 163, 167)');
+    });
+
+    it('displays list items with white text', () => {
+      for (let i = 0; i < navbarAs.length(); i++) {
+        let liColor = navbarAs.at(i).getRawStyle('color');
+        expect(liColor).to.be.equal('rgb(255, 255, 255)');
+      }
     });
 
     it('displays list items in a row', () => {
