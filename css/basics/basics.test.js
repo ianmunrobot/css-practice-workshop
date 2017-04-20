@@ -76,8 +76,8 @@ describe('Basic CSS Rules', () => {
       .then(res => res.data)
       .then(text => findCSSSelector(text, '.blue-background'))
       .then(style => {
-          assert(style.indexOf('blue') === -1, `does not use the 'blue' keyword`);
-        });
+        assert(style.indexOf('blue') === -1, `does not use the 'blue' keyword`);
+      });
     })
 
   });
