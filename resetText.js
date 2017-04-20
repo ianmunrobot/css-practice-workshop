@@ -79,16 +79,11 @@ body {
 }
 
 .ul-list {
-  /*width: 97.2%;*/
-  /*position: absolute;*/
-  padding: 10px 10px;
-  background-color: rgb(45, 24, 155);
-  list-style: none;
+
 }
 
 .ul-list-item {
-  color: #4579a1;
-  margin: 10px auto;
+
 }`
   },
   {
@@ -99,13 +94,11 @@ body {
 }
 
 .col-half {
-  width: 50%;
-  float: left;
+
 }
 
 .col-third {
-  width: 33%;
-  float: left;
+
 }`
   },
   {
@@ -146,7 +139,7 @@ html {
 **/
 
 .fixed-left-position {
-  background-color: #a8a1a1;
+
 }
 
 /*
@@ -156,7 +149,7 @@ html {
 * some tips and tricks
 */
 .center-position {
-  background-color: #a5a5a5;
+
 }
 
 /*
@@ -165,7 +158,7 @@ html {
 */
 
 .top-right {
-  background-color: #706a6a;
+
 }
 
 /*
@@ -174,7 +167,7 @@ html {
 */
 
 .bottom-left {
-  background-color: #706a6a;
+
 }
 
 .centered-text {
