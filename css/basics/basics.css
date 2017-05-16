@@ -1,12 +1,11 @@
 /*Create a full-width button class*/
 .button {
-  width: 100%;
-  display: block;
+
 }
 
 /*Create a class to make fonts bold*/
 .bold {
-  font-weight: bold;
+
 }
 
 /** Create a class
@@ -14,5 +13,5 @@
 *   do not use the built-in css color names
 **/
 .blue-background {
-  background-color: #0000ff;
+
 }

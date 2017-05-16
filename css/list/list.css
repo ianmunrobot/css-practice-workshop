@@ -12,18 +12,13 @@
 **/
 
 body {
-  background-color: #f34251;
+
 }
 
 .ul-list {
-  /*width: 100%;*/
-  /*position: absolute;*/
-  padding: 10px 10px;
-  background-color: rgb(45, 24, 155);
-  list-style: none;
+
 }
 
 .ul-list-item {
-  color: #4579a1;
-  margin: 10px auto;
+
 }
